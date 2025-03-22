@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт с картинками и фоном</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://umbphotos.ag/images/375b18fa3ffcc616179b8cf6ed4732c6.webp'); /* Укажите ссылку на фон */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .images-container {
+            display: flex;
+            flex-direction: column; /* Arrange images vertically */
+            align-items: center;
+        }
+        .images-container img {
+            width: 200px; /* Задайте желаемый размер изображения */
+            margin: 10px;
+            cursor: pointer;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .images-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">Добро пожаловать!</h1>
+    <div class="images-container">
+        <a href="https://boss10211.github.io/Casino/" target="_blank">
+            <img src="https://umbphotos.ag/images/36e1f8936033479b822f1b08da0ba2d7.png" alt="Картинка 1">
+        </a>
+        <a href="https://boss10211.github.io/Roullette" target="_blank">
+            <img src="https://umbphotos.ag/images/d7917bd885503b684a9de0d9b1a27497.png/" alt="Картинка 2">
+        </a>
+        <a href="https://boss10211.github.io/LUCKY/" target="_blank">
+            <img src="https://umbphotos.ag/images/12776e87dfa9e707764d274f4fe07c67.png " alt="Картинка 3">
+        </a>
+    </div>
+</body>
+</html>
